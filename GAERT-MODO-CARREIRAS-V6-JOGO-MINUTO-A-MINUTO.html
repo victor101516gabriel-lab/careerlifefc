@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GAERT MODO CARREIRAS</title>
+<meta name="description" content="GAERT MODO CARREIRAS — crie seu jogador, viva sua carreira e escreva sua história no futebol.">
+<style>
+:root{--bg:#05070b;--panel:#0b1018;--panel2:#101827;--line:#1d2b40;--text:#f6f8fc;--muted:#8b99ad;--blue:#087cff;--blue2:#36a3ff;--green:#39d98a;--gold:#ffd166;--red:#ff5b6e;--shadow:0 20px 55px #0008}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% -10%,#102c52 0,#05070b 32%),#05070b;color:var(--text);font:14px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh}.sidebar{position:fixed;left:0;top:0;bottom:0;width:248px;background:linear-gradient(180deg,#070c14,#060910);border-right:1px solid var(--line);padding:22px 15px;z-index:20}.logo{display:flex;align-items:center;gap:10px;padding:4px 10px 25px}.crown{font-size:30px;color:#54aaff;text-shadow:0 0 24px #087cff88}.logo strong{font-size:20px;letter-spacing:.5px}.logo small{display:block;color:#8aa9cf;font-size:8px;letter-spacing:3px;margin-top:2px}.section-label{font-size:9px;font-weight:900;letter-spacing:1.7px;color:#53647b;text-transform:uppercase;padding:14px 11px 7px}.nav{display:grid;gap:4px}.nav button{border:1px solid transparent;background:transparent;color:#aebbd0;text-align:left;border-radius:11px;padding:11px 12px;display:flex;align-items:center;gap:11px}.nav button:hover,.nav button.active{background:linear-gradient(90deg,#087cff26,#087cff08);border-color:#1768b655;color:white}.nav .ico{width:22px;text-align:center;font-size:17px}.bottom-brand{position:absolute;bottom:20px;left:25px;right:25px;color:#6f829d;font-size:9px;letter-spacing:2px}.main{margin-left:248px;min-height:100vh;padding:18px 22px 50px;max-width:1600px}.topbar{height:54px;display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:15px}.search{flex:1;max-width:540px;display:flex;align-items:center;background:#0a111d;border:1px solid var(--line);border-radius:13px;padding:0 13px}.search span{color:#6d82a0}.search input{width:100%;border:0;outline:0;background:transparent;color:#fff;padding:11px}.top-actions{display:flex;gap:8px;align-items:center}.icon-btn,.profile{border:1px solid var(--line);background:#0b111b;color:#dce7f7;border-radius:11px;padding:10px 12px}.profile{display:flex;gap:9px;align-items:center}.profile b{display:block}.profile small{color:#6f83a0}.hero{position:relative;overflow:hidden;min-height:340px;border:1px solid #1b385c;border-radius:22px;background:radial-gradient(circle at 80% 20%,#0e5cab88,transparent 30%),linear-gradient(110deg,#081321,#07101c 45%,#0a1a2c);box-shadow:var(--shadow)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06101cee 0%,#06101dcc 42%,#06101d33 78%,#06101d00),radial-gradient(circle at 80% 55%,#178cff22,transparent 30%)}.hero-art{position:absolute;right:0;bottom:0;width:55%;height:100%;background:radial-gradient(ellipse at 65% 30%,#4caeff66,transparent 17%),linear-gradient(135deg,transparent 25%,#153b65 26%,#07101b 65%);opacity:.9}.hero-art:after{content:"⚽";position:absolute;right:11%;bottom:17%;font-size:110px;filter:drop-shadow(0 0 25px #178cff88);opacity:.32}.hero-content{position:relative;z-index:2;padding:48px 45px;max-width:760px}.eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#73a8de;font-weight:900}.hero h1{font-size:clamp(38px,5vw,70px);line-height:.95;margin:9px 0 12px;letter-spacing:-3px}.hero h1 span{color:#198bff;text-shadow:0 0 28px #087cff55}.hero p{font-size:16px;color:#c0ccdb;max-width:620px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{border:1px solid #29405d;background:#0e1827;color:#fff;border-radius:11px;padding:11px 16px;font-weight:850}.btn:hover{transform:translateY(-1px)}.btn.primary{border-color:#1687ff;background:linear-gradient(135deg,#087cff,#1767ff);box-shadow:0 10px 25px #087cff33}.btn.ghost{background:transparent}.content-title{display:flex;align-items:end;justify-content:space-between;margin:26px 0 12px}.content-title h2{margin:0;font-size:20px}.content-title small{color:var(--muted)}.grid{display:grid;gap:13px}.g5{grid-template-columns:repeat(5,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}.card{background:linear-gradient(145deg,#0d1520,#090e16);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 10px 30px #0004}.feature{min-height:178px;position:relative;overflow:hidden}.feature .feature-art{height:80px;border-radius:11px;background:linear-gradient(135deg,#123e6e,#0a1624);margin:-3px -3px 12px;display:grid;place-items:center;font-size:42px}.feature h3{margin:0 0 4px}.feature p{margin:0;color:var(--muted);font-size:12px}.feature .mini-btn{margin-top:12px}.mini-btn{border:1px solid #29405d;background:#101b2a;color:#fff;border-radius:8px;padding:7px 10px;font-size:11px;font-weight:800}.player-card{display:flex;gap:15px;align-items:center}.avatar{width:82px;height:82px;border-radius:18px;background:linear-gradient(145deg,#1d6db5,#101827);border:1px solid #2f7dc0;display:grid;place-items:center;font-size:27px;font-weight:950;box-shadow:0 0 30px #087cff22}.player-card h3{margin:0;font-size:20px}.muted{color:var(--muted)}.pill{display:inline-block;padding:4px 8px;border:1px solid #29405d;border-radius:999px;color:#9bb0c9;font-size:10px;margin:3px 3px 0 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:14px}.stat{background:#080d15;border:1px solid #17263a;border-radius:11px;padding:11px}.stat small{color:#71839b;font-size:9px}.stat b{display:block;font-size:21px;margin-top:2px}.progress{height:6px;border-radius:99px;background:#172335;overflow:hidden;margin-top:7px}.progress i{display:block;height:100%;background:linear-gradient(90deg,#087cff,#58b8ff)}.news-item,.rank-item,.row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid #172233}.news-item:last-child,.rank-item:last-child,.row:last-child{border-bottom:0}.news-thumb{width:70px;height:45px;border-radius:8px;background:linear-gradient(135deg,#193e68,#0b111c);display:grid;place-items:center;font-size:20px}.news-copy{flex:1}.news-copy b{font-size:12px}.news-copy small{display:block;color:#667991;margin-top:3px}.rank-num{width:26px;color:#6e88a8;font-weight:900}.rank-avatar{width:30px;height:30px;border-radius:9px;background:#18304e;display:grid;place-items:center;font-size:11px;font-weight:900}.rank-name{flex:1}.rank-name small{display:block;color:#637691}.ovr{font-size:18px;font-weight:950}.gold{color:var(--gold)}.green{color:var(--green)}.red{color:var(--red)}.footer{margin-top:30px;border-top:1px solid var(--line);padding:22px 5px;color:#64758b;display:flex;justify-content:space-between;gap:15px}.modal{display:none;position:fixed;inset:0;background:#000d;z-index:50;align-items:center;justify-content:center;padding:15px}.modal.open{display:flex}.modalbox{width:min(860px,100%);max-height:92vh;overflow:auto;background:#0a111b;border:1px solid #27415f;border-radius:18px;padding:20px;box-shadow:0 30px 90px #000b}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:center}.modal-head h2{margin:0}.close{border:1px solid var(--line);background:#0e1622;color:white;border-radius:9px;padding:7px 10px}.form{display:grid;gap:14px;margin-top:15px}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.field{display:grid;gap:5px}.field label{font-size:10px;color:#8ea0b7;font-weight:850;text-transform:uppercase;letter-spacing:.5px}.field input,.field select,.field textarea{background:#070c13;border:1px solid #25364b;color:#fff;border-radius:9px;padding:10px;outline:none}.field textarea{min-height:90px;resize:vertical}.form-section{border:1px solid #1b2c41;border-radius:12px;padding:13px}.form-section h3{margin:0 0 10px;font-size:12px;color:#b9cae0}.actions{display:flex;justify-content:flex-end;gap:8px}.empty{text-align:center;padding:35px;color:#6f8199}.toast{display:none;position:fixed;right:18px;bottom:18px;z-index:70;background:#f2f7ff;color:#07101a;border-radius:11px;padding:11px 15px;font-weight:900;box-shadow:0 15px 35px #0008}.mobile-menu{display:none}
+@media(max-width:1100px){.sidebar{width:205px}.main{margin-left:205px}.g5{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(2,1fr)}.hero-art{width:48%}}
+@media(max-width:760px){.sidebar{display:none}.main{margin-left:0;padding:12px 12px 40px}.mobile-menu{display:flex;position:fixed;left:12px;bottom:12px;right:12px;height:58px;background:#0a111beF;border:1px solid #25415e;border-radius:17px;z-index:40;align-items:center;justify-content:space-around;box-shadow:0 20px 50px #000b}.mobile-menu button{background:transparent;border:0;color:#8fa4bd;font-size:19px}.mobile-menu button.active{color:#36a3ff}.topbar{height:45px}.search{max-width:none}.top-actions .icon-btn{display:none}.profile span{display:none}.hero{min-height:390px}.hero-content{padding:32px 24px}.hero h1{font-size:43px}.hero-art{width:100%;opacity:.28}.g5,.g4,.g3,.g2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.fields{grid-template-columns:1fr}.footer{padding-bottom:75px;flex-direction:column}.content-title{align-items:start;gap:8px;flex-direction:column}}
+</style>
+
+<style id="gaert-engine-v3">
+.engine-bar{display:flex;align-items:center;gap:9px;margin:10px 0 14px;padding:9px 12px;border:1px solid #1d2b40;border-radius:12px;background:rgba(11,16,24,.78);font-size:12px;color:#8b99ad}
+.engine-dot{width:8px;height:8px;border-radius:50%;background:#39d98a;box-shadow:0 0 12px #39d98a;animation:gaertPulse 1.8s infinite}
+@keyframes gaertPulse{0%,100%{opacity:1}50%{opacity:.35}}
+.engine-bar b{color:#f6f8fc}.engine-spacer{flex:1}.live-clock{font-variant-numeric:tabular-nums}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.quick-action{min-height:78px;text-align:left;border:1px solid #1d2b40;background:#0b1018;border-radius:14px;color:#f6f8fc;padding:12px;cursor:pointer;transition:.18s}
+.quick-action:hover{transform:translateY(-2px);border-color:#087cff;background:#101827}
+.quick-action b{display:block;margin-top:5px}.quick-action small{color:#8b99ad}
+.is-busy{opacity:.65!important;pointer-events:none!important}
+@media(max-width:760px){.quick-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+
+<style id="gaert-choices-v5">
+.choice-options{display:grid;gap:8px;margin-top:14px}
+.choice-options .btn{width:100%;text-align:left}
+.bar{height:8px;background:#141c28;border-radius:99px;overflow:hidden;margin-top:9px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#087cff,#35d6ff);border-radius:99px}
+.list-row{display:flex;gap:12px;justify-content:space-between;padding:12px 0;border-bottom:1px solid #172131}
+.list-row:last-child{border-bottom:0}
+</style>
+
+<style id="gaert-match-v6">
+.match-hero{background:radial-gradient(circle at 50% 0%,#164e82aa,transparent 45%),linear-gradient(145deg,#07111e,#0a1523);border:1px solid #1e4770;border-radius:18px;padding:18px;box-shadow:0 20px 55px #0007}
+.match-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}.match-league{color:#80a8d3;font-size:10px;text-transform:uppercase;letter-spacing:1.7px;font-weight:900}.match-clock{font-size:25px;font-weight:950;font-variant-numeric:tabular-nums}.match-score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:15px;text-align:center}.team-name{font-size:16px;font-weight:900}.team-badge{width:58px;height:58px;border-radius:16px;margin:0 auto 8px;display:grid;place-items:center;background:#122942;border:1px solid #28547e;font-size:27px}.score{font-size:48px;line-height:1;font-weight:950;letter-spacing:-3px}.match-status{margin-top:12px;text-align:center;color:#8fa8c2;font-size:11px}.event-feed{max-height:440px;overflow:auto;display:grid;gap:7px;margin-top:12px}.match-event{display:grid;grid-template-columns:42px 30px 1fr;gap:8px;align-items:start;padding:9px 10px;background:#080e17;border:1px solid #17263a;border-radius:10px}.match-event .min{font-weight:900;color:#62aef2;font-variant-numeric:tabular-nums}.match-event .evicon{font-size:17px}.match-event small{display:block;color:#71849d;margin-top:2px}.match-controls{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.match-controls .btn{width:100%}.tactics{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:10px}.tactic{border:1px solid #233a54;background:#0a1421;color:#b9c9dc;border-radius:10px;padding:9px 6px;font-weight:850;font-size:11px}.tactic.active{border-color:#1687ff;background:#0d2b4c;color:white}.player-match-card{display:grid;gap:10px}.match-rating{font-size:34px;font-weight:950}.rating-good{color:#39d98a}.rating-mid{color:#ffd166}.rating-bad{color:#ff7a87}.match-choice{border:1px solid #274664;background:#0b1522;border-radius:13px;padding:12px;margin-top:10px}.match-choice h3{margin:0 0 5px}.choice-grid{display:grid;gap:7px;margin-top:9px}.choice-grid .btn{text-align:left}.post-match{display:grid;gap:10px}.statline{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #172233}.statline:last-child{border-bottom:0}.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#39d98a;box-shadow:0 0 10px #39d98a;margin-right:6px}
+@media(max-width:760px){.match-score{gap:7px}.score{font-size:38px}.team-name{font-size:13px}.tactics{grid-template-columns:repeat(2,1fr)}.match-controls{grid-template-columns:repeat(3,1fr)}.match-controls .btn{padding:9px 5px;font-size:11px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="logo"><div class="crown">♛</div><div><strong>GAERT</strong><small>MODO CARREIRAS</small></div></div>
+  <div class="section-label">Principal</div>
+  <nav class="nav" id="nav">
+    <button data-page="home"><span class="ico">⌂</span>Início</button>
+    <button data-page="create"><span class="ico">✚</span>Criar personagem</button>
+    <button data-page="careers"><span class="ico">⚽</span>Minhas carreiras</button>
+    <button data-page="matches"><span class="ico">🎮</span>Partidas</button>
+<button data-page="training"><span class="ico">🏋️</span>Treinos</button>
+<button data-page="choices"><span class="ico">🧠</span>Escolhas</button>
+    <button data-page="ranking"><span class="ico">♛</span>Ranking</button>
+    <button data-page="news"><span class="ico">▤</span>Notícias</button>
+  </nav>
+  <div class="section-label">Universo</div>
+  <nav class="nav">
+    <button data-page="instagram"><span class="ico">◎</span>Instagram</button>
+    <button data-page="finance"><span class="ico">$</span>Finanças</button>
+    <button data-page="trophies"><span class="ico">🏆</span>Títulos</button>
+    <button data-page="national"><span class="ico">🇧🇷</span>Seleção</button>
+    <button data-page="settings"><span class="ico">⚙</span>Configurações</button>
+  </nav>
+  <div class="section-label">Save</div>
+  <nav class="nav">
+    <button id="newCareerBtn"><span class="ico">＋</span>Nova carreira</button>
+    <button id="exportBtn"><span class="ico">↥</span>Exportar save</button>
+    <button id="importBtn"><span class="ico">↧</span>Importar save</button>
+    <input hidden id="importFile" type="file" accept=".json">
+  </nav>
+  <div class="bottom-brand">SONHE · PLANEJE · CONQUISTE</div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="search"><span>⌕</span><input id="search" placeholder="Buscar jogadores, clubes, ligas..."></div>
+    <div class="top-actions"><button class="icon-btn" onclick="toggleThemeHint()">◐</button><button class="icon-btn">♧</button><div class="profile"><div>👤</div><div><b>Convidado</b><small>Seu perfil</small></div></div></div>
+  </div>
+  <div id="app"></div>
+  <div class="footer"><span>GAERT MODO CARREIRAS · Viva sua carreira. Escreva sua história.</span><span>© 2026</span></div>
+</main>
+</div>
+<div class="mobile-menu"><button data-page="home">⌂</button><button data-page="create">＋</button><button data-page="careers">⚽</button><button data-page="ranking">♛</button><button data-page="settings">⚙</button></div>
+<div class="modal" id="modal"><div class="modalbox" id="modalbox"></div></div><div class="toast" id="toast"></div>
+<script>
+const KEY='gaert_modo_carreiras_v2', OLD='careerLife_complete_v1';
+const base={id:Date.now(),created:true,player:{name:'V.GAERT',nickname:'Gaert',shirt:14,age:16,birth:'2010-02-10',nation:'Brasil',city:'Porto Alegre',position:'Meia',secondary:'Ponta Direita',foot:'Direito',height:178,weight:68,club:'Vasco',level:'Base',ovr:67,potential:89,value:350000,salary:1800,contract:2,popularity:35,followers:1240,pro:78,amb:86,lead:58,hum:72,temp:64,loyal:80,pace:78,dribble:81,pass:76,finish:70,strength:61,stamina:74,vision:79,defense:35,control:83},date:{d:15,m:9,y:2026},stats:{apps:0,goals:0,assists:0,minutes:0,yellow:0,red:0},season:{apps:0,goals:0,assists:0},injury:null,posts:[{text:'Começando uma nova fase. Trabalho, foco e gratidão. ⚽',likes:186,comments:12,date:'15/09/2026'}],news:['V.GAERT é apontado como uma das promessas para observar na base.','Comissão técnica destaca evolução do meia nos treinamentos.','Mercado começa a monitorar jovens talentos da temporada.'],offers:[],trophies:[],finance:[],history:[{year:2026,age:16,club:'Vasco',apps:0,goals:0,assists:0,ovr:67}],national:{apps:0,goals:0,called:false}};
+let S=load(),page='home';
+function clone(x){return JSON.parse(JSON.stringify(x))}
+function repairState(v){
+  let n=clone(base);
+  if(v&&typeof v==='object'){
+    Object.assign(n,v);
+    n.player=Object.assign(clone(base.player),v.player||{});
+    n.date=Object.assign(clone(base.date),v.date||{});
+    n.stats=Object.assign(clone(base.stats),v.stats||{});
+    n.season=Object.assign(clone(base.season),v.season||{});
+    n.national=Object.assign(clone(base.national),v.national||{});
+    for(const k of ['finance','posts','news','history','trophies']) n[k]=Array.isArray(v[k])?v[k]:[];
+  }
+  n.player.ovr=Math.max(1,Math.min(99,Number(n.player.ovr)||67));
+  n.player.potential=Math.max(n.player.ovr,Math.min(99,Number(n.player.potential)||89));
+  n.player.age=Math.max(12,Math.min(60,Number(n.player.age)||16));
+  n.player.energy=Math.max(0,Math.min(100,Number(n.player.energy??82)));
+  n.player.fatigue=Math.max(0,Math.min(100,Number(n.player.fatigue??18)));
+  n.player.morale=Math.max(0,Math.min(100,Number(n.player.morale??78)));
+  n.choices=Array.isArray(v?.choices)?v.choices:[];
+  n.player.professionalism=Math.max(0,Math.min(100,Number(n.player.professionalism??70)));
+  n.player.ambition=Math.max(0,Math.min(100,Number(n.player.ambition??70)));
+  n.player.leadership=Math.max(0,Math.min(100,Number(n.player.leadership??60)));
+  n.player.loyalty=Math.max(0,Math.min(100,Number(n.player.loyalty??70)));
+  if(v?.match&&typeof v.match==='object'){n.match=v.match}else n.match=null;
+  return n;
+}
+function load(){
+  try{
+    let v=JSON.parse(localStorage.getItem(KEY)); if(v)return repairState(v);
+    let old=JSON.parse(localStorage.getItem(OLD)); if(old)return repairState(old);
+  }catch(e){}
+  return repairState(base);
+}
+function save(){
+  try{localStorage.setItem(KEY,JSON.stringify(S));return true}
+  catch(e){return false}
+}
+function fmt(n){return new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}).format(n)}
+function dateStr(){return `${String(S.date.d).padStart(2,'0')}/${String(S.date.m).padStart(2,'0')}/${S.date.y}`}
+function note(t){const x=document.getElementById('toast');x.textContent=t;x.style.display='block';clearTimeout(window.__toast);window.__toast=setTimeout(()=>x.style.display='none',1800)}
+const titles={home:'Início',create:'Criar personagem',careers:'Minhas carreiras',training:'Treinos',choices:'Escolhas',ranking:'Ranking',news:'Notícias',instagram:'Instagram',finance:'Finanças',trophies:'Títulos',national:'Seleção',settings:'Configurações'};
+function nav(p){page=p;document.querySelectorAll('[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===p));render()}
+document.querySelectorAll('[data-page]').forEach(x=>x.onclick=()=>nav(x.dataset.page));
+function statBox(label,value,pct){return `<div class="stat"><small>${label}</small><b>${value}</b>${pct!=null?`<div class="progress"><i style="width:${pct}%"></i></div>`:''}</div>`}
+function feature(icon,title,text,action){return `<div class="card feature"><div class="feature-art">${icon}</div><h3>${title}</h3><p>${text}</p><button class="mini-btn" onclick="${action}">Abrir →</button></div>`}
+function home(){let p=S.player;return `<section class="hero"><div class="hero-art"></div><div class="hero-content"><div class="eyebrow">A nova geração do modo carreira</div><h1>GAERT<br><span>MODO CARREIRAS</span></h1><p>Crie seu próprio jogador, comece na base, faça escolhas, conquiste títulos e transforme sua trajetória em uma história única.</p><div class="hero-actions"><button class="btn primary" onclick="nav('create')">✦ CRIAR NOVA CARREIRA</button><button class="btn ghost" onclick="nav('careers')">▶ CONTINUAR CARREIRA</button></div></div></section>
+<div class="content-title"><h2>Seu universo</h2><small>O que você quer fazer agora?</small></div><div class="grid g5">${feature('👤','Criar personagem','Monte seu jogador do zero e escolha posição, estilo e personalidade.','nav(\'create\')')}${feature('⚽','Minhas carreiras','Continue sua jornada, acompanhe temporadas e evolua seu atleta.','nav(\'careers\')')}${feature('🏋️','Treinos','Evolua atributos, controle energia e prepare o jogador para as partidas.','nav(\'training\')')}${feature('♛','Ranking','Compare os melhores jogadores e carreiras da comunidade.','nav(\'ranking\')')}${feature('📰','Notícias','Veja o mundo do futebol reagindo ao que acontece na sua carreira.','nav(\'news\')')}${feature('📱','Instagram','Publique, ganhe seguidores, atraia marcas e construa sua imagem.','nav(\'instagram\')')}</div>
+<div class="content-title"><h2>Seu jogador</h2><small>${p.club} · ${p.level} · ${p.age} anos</small></div><div class="card"><div class="player-card"><div class="avatar">${p.shirt}</div><div style="flex:1"><div class="eyebrow">${p.position} · ${p.foot}</div><h3>${p.name}</h3><span class="muted">${p.nickname?'“'+p.nickname+'” · ':''}${p.city} · ${p.nation}</span><div><span class="pill">OVR ${p.ovr}</span><span class="pill">Potencial ${p.potential}</span><span class="pill">Camisa ${p.shirt}</span><span class="pill">${fmt(p.value)}</span></div></div><button class="btn" onclick="nav('create')">Editar</button></div><div class="stats">${statBox('OVERALL',p.ovr,p.ovr)}${statBox('POTENCIAL',p.potential,p.potential)}${statBox('SEGUIDORES',p.followers.toLocaleString('pt-BR'))}${statBox('VALOR DE MERCADO',fmt(p.value))}</div></div>
+<div class="grid g2" style="margin-top:13px"><div class="card"><div class="content-title" style="margin:0 0 5px"><h2>📰 Notícias em destaque</h2><button class="mini-btn" onclick="nav('news')">Ver todas</button></div>${S.news.slice(0,4).map((n,i)=>`<div class="news-item"><div class="news-thumb">${['⚽','🔥','🌎','📣'][i]}</div><div class="news-copy"><b>${n}</b><small>GAERT NEWS · ${dateStr()}</small></div></div>`).join('')}</div><div class="card"><div class="content-title" style="margin:0 0 5px"><h2>♛ Top 5 da comunidade</h2><button class="mini-btn" onclick="nav('ranking')">Ranking</button></div>${rankingRows()}</div></div>`}
+function rankingRows(){let names=[['Rafael Santos',96,'Real Madrid'],['Lucas Ferreira',94,'Manchester City'],['Gabriel Costa',93,'Barcelona'],['Matheus Lima',92,'PSG'],['Pedro Almeida',91,'Bayern']];return names.map((r,i)=>`<div class="rank-item"><span class="rank-num">${i+1}</span><span class="rank-avatar">${r[0].split(' ').map(x=>x[0]).join('')}</span><span class="rank-name"><b>${r[0]}</b><small>${r[2]}</small></span><b class="ovr">${r[1]}</b></div>`).join('')}
+function createPage(){let p=S.player;return `<div class="card"><div class="eyebrow">Construa sua história</div><h1 style="margin:5px 0">Criar personagem</h1><p class="muted">Comece sua carreira do jeito que você quiser. Essas informações ficam salvas neste dispositivo.</p><form class="form" id="characterForm"><div class="form-section"><h3>IDENTIDADE</h3><div class="fields">${field('name','Nome do jogador','text',p.name,true)}${field('nickname','Apelido','text',p.nickname)}${field('birth','Data de nascimento','date',p.birth)}${field('nation','Nacionalidade','text',p.nation)}${field('city','Cidade natal','text',p.city)}${field('shirt','Número da camisa','number',p.shirt)}</div></div><div class="form-section"><h3>FUTEBOL</h3><div class="fields">${selectField('position','Posição',p.position,['Goleiro','Zagueiro','Lateral','Volante','Meia','Ponta','Atacante'])}${selectField('secondary','Posição secundária',p.secondary,['Nenhuma','Zagueiro','Lateral','Volante','Meia','Ponta Esquerda','Ponta Direita','Atacante'])}${selectField('foot','Pé dominante',p.foot,['Direito','Esquerdo'])}${field('age','Idade inicial','number',p.age)}${field('height','Altura (cm)','number',p.height)}${field('weight','Peso (kg)','number',p.weight)}</div></div><div class="form-section"><h3>PERSONALIDADE</h3><div class="fields">${field('pro','Profissionalismo','number',p.pro)}${field('amb','Ambição','number',p.amb)}${field('lead','Liderança','number',p.lead)}${field('hum','Humildade','number',p.hum)}${field('temp','Temperamento','number',p.temp)}${field('loyal','Lealdade','number',p.loyal)}</div></div><div class="actions"><button type="button" class="btn" onclick="nav('home')">Cancelar</button><button class="btn primary">Salvar personagem e começar</button></div></form></div>`}
+function field(n,l,t,v,req){return `<div class="field"><label>${l}</label><input name="${n}" type="${t}" value="${String(v??'').replace(/"/g,'&quot;')}" ${req?'required':''}></div>`}
+function selectField(n,l,v,opts){return `<div class="field"><label>${l}</label><select name="${n}">${opts.map(o=>`<option ${o===v?'selected':''}>${o}</option>`).join('')}</select></div>`}
+function careers(){let p=S.player;return `<div class="grid g2"><div class="card"><div class="eyebrow">Carreira ativa</div><h2>${p.name}</h2><p class="muted">${p.club} · ${p.level} · Temporada ${S.date.y}</p><div class="row"><span>Idade</span><b>${p.age}</b></div><div class="row"><span>Jogos</span><b>${S.stats.apps}</b></div><div class="row"><span>Gols</span><b>${S.stats.goals}</b></div><div class="row"><span>Assistências</span><b>${S.stats.assists}</b></div><button class="btn primary" onclick="nav('matches')">Ir para a carreira →</button></div><div class="card"><div class="eyebrow">Próxima evolução</div><h2>Objetivo: ${Math.min(p.potential,p.ovr+5)} OVR</h2><p class="muted">Treine, jogue partidas e tome decisões para desenvolver seu jogador.</p><div class="progress" style="height:10px"><i style="width:${p.ovr/p.potential*100}%"></i></div><div class="row"><span>Overall</span><b>${p.ovr} / ${p.potential}</b></div><button class="btn" onclick="advanceDay()">Avançar dia</button>
+<div class="quick-grid">
+<button class="quick-action" onclick="advanceDay(7)">📅<b>+7 dias</b><small>Simular uma semana</small></button>
+<button class="quick-action" onclick="advanceDay(30)">⏩<b>+30 dias</b><small>Avançar um mês</small></button>
+<button class="quick-action" onclick="nav('matches')">⚽<b>Jogar</b><small>Próxima partida</small></button>
+<button class="quick-action" onclick="nav('instagram')">📱<b>Instagram</b><small>Atualizar sua história</small></button>
+</div></div></div><div class="card" style="margin-top:13px"><div class="content-title" style="margin:0"><h2>Histórico de temporadas</h2><small>${S.history.length} temporada(s)</small></div><table><thead><tr><th>Ano</th><th>Clube</th><th>Idade</th><th>J</th><th>G</th><th>A</th><th>OVR</th></tr></thead><tbody>${S.history.slice().reverse().map(h=>`<tr><td>${h.year}</td><td>${h.club}</td><td>${h.age}</td><td>${h.apps}</td><td>${h.goals}</td><td>${h.assists}</td><td><b>${h.ovr}</b></td></tr>`).join('')}</tbody></table></div>`}
+function matches(){
+  const p=S.player;
+  if(S.match && S.match.status==='live') return matchCenter();
+  if(S.match && S.match.status==='finished') return postMatch();
+  return `<div class="content-title"><h2>Central de partidas</h2><small>Partidas jogáveis minuto a minuto</small></div>
+  <div class="grid g2">
+    <div class="match-hero">
+      <div class="match-top"><div><div class="match-league">Campeonato Brasileiro · Base</div><b>Rodada ${((S.stats.apps||0)+1)}</b></div><span class="pill">PRÓXIMA</span></div>
+      <div class="match-score"><div><div class="team-badge">⚫</div><div class="team-name">${escapeHtml(p.club)}</div></div><div><div class="score">–</div><div class="match-status">São Januário · hoje</div></div><div><div class="team-badge">🔴</div><div class="team-name">Flamengo</div></div></div>
+      <div class="row"><span>Situação</span><b>${p.ovr>=72?'Titular':'Banco'}</b></div>
+      <div class="row"><span>Energia</span><b>${Math.round(p.energy??82)}%</b></div>
+      <div class="row"><span>Forma</span><b>${Math.round(p.morale??78)}%</b></div>
+      <div style="margin-top:14px"><button class="btn primary" style="width:100%" onclick="startMatchV6()">▶ ENTRAR EM CAMPO</button></div>
+    </div>
+    <div class="card"><div class="eyebrow">Temporada ${S.date.y}</div>
+      ${[['Jogos',S.season.apps],['Gols',S.season.goals],['Assistências',S.season.assists],['Amarelos',S.stats.yellow],['Vermelhos',S.stats.red],['Minutos',S.stats.minutes]].map(x=>`<div class="row"><span>${x[0]}</span><b>${x[1]}</b></div>`).join('')}
+      <div class="content-title" style="margin:18px 0 8px"><h3>Como funciona</h3></div>
+      <p class="muted">Você controla o ritmo da partida. Avance minuto a minuto, escolha a postura tática e tome decisões quando a bola chegar ao seu jogador.</p>
+      <span class="pill">⚡ Ataque</span><span class="pill">🎯 Equilibrado</span><span class="pill">🛡️ Segurança</span><span class="pill">🔥 Risco</span>
+    </div>
+  </div>`;
+}
+function matchCenter(){
+  const m=S.match,p=S.player;
+  const rating=Number(m.rating||6).toFixed(1);
+  const rclass=rating>=7.5?'rating-good':rating>=6?'rating-mid':'rating-bad';
+  const choices=m.pendingChoice?`<div class="match-choice"><h3>${m.pendingChoice.title}</h3><p class="muted">${m.pendingChoice.text}</p><div class="choice-grid">${m.pendingChoice.options.map((o,i)=>`<button class="btn ${i===0?'primary':''}" onclick="matchChoice(${i})">${o}</button>`).join('')}</div></div>`:'';
+  return `<div class="content-title"><h2>Partida ao vivo</h2><small><span class="live-dot"></span>${m.minute<90?'AO VIVO':'ACRÉSCIMOS'}</small></div>
+  <div class="grid g2">
+    <div class="match-hero">
+      <div class="match-top"><div><div class="match-league">Campeonato Brasileiro · ${m.stadium}</div><b>${m.round}ª rodada</b></div><div class="match-clock">${String(m.minute).padStart(2,'0')}'</div></div>
+      <div class="match-score"><div><div class="team-badge">⚫</div><div class="team-name">${escapeHtml(m.home)}</div></div><div><div class="score">${m.homeGoals} : ${m.awayGoals}</div><div class="match-status">${m.minute>=90?'APITO FINAL':'Partida em andamento'}</div></div><div><div class="team-badge">🔴</div><div class="team-name">${m.away}</div></div></div>
+      <div class="tactics">${[['attack','⚔️ Ataque'],['balanced','⚖️ Equilíbrio'],['safe','🛡️ Segurança'],['risk','🔥 Risco']].map(([k,l])=>`<button class="tactic ${m.tactic===k?'active':''}" onclick="matchTactic('${k}')">${l}</button>`).join('')}</div>
+      <div class="match-controls"><button class="btn" onclick="matchNext(1)">+1 min</button><button class="btn" onclick="matchNext(5)">+5 min</button><button class="btn primary" onclick="matchNext(10)">+10 min</button></div>
+      ${choices}
+    </div>
+    <div class="grid">
+      <div class="card player-match-card"><div class="eyebrow">Seu desempenho</div><div><span class="match-rating ${rclass}">${rating}</span><span class="muted"> / 10.0</span></div><div class="row"><span>Energia</span><b>${Math.round(m.energy)}%</b></div><div class="progress"><i style="width:${m.energy}%"></i></div><div class="row"><span>Posição</span><b>${p.position}</b></div><div class="row"><span>Ações</span><b>${m.playerActions}</b></div></div>
+      <div class="card"><div class="eyebrow">Estatísticas</div><div class="statline"><span>Finalizações</span><b>${m.stats.shots}</b></div><div class="statline"><span>Dribles</span><b>${m.stats.dribbles}</b></div><div class="statline"><span>Passes certos</span><b>${m.stats.passes}</b></div><div class="statline"><span>Assistências</span><b>${m.stats.assists}</b></div><div class="statline"><span>Gols</span><b>${m.stats.goals}</b></div></div>
+      <div class="card"><div class="eyebrow">Linha do tempo</div><div class="event-feed">${m.events.length?m.events.slice().reverse().map(e=>`<div class="match-event"><span class="min">${e.minute}'</span><span class="evicon">${e.icon}</span><div>${escapeHtml(e.text)}${e.detail?`<small>${escapeHtml(e.detail)}</small>`:''}</div></div>`).join(''):'<div class="empty">O árbitro ainda não apitou. A partida vai começar.</div>'}</div></div>
+    </div>
+  </div>`;
+}
+function postMatch(){
+  const m=S.match,p=S.player;
+  const result=m.homeGoals>m.awayGoals?'VITÓRIA':m.homeGoals<m.awayGoals?'DERROTA':'EMPATE';
+  const rating=Number(m.rating||6).toFixed(1);
+  return `<div class="content-title"><h2>Fim de jogo</h2><small>${m.home} ${m.homeGoals} × ${m.awayGoals} ${m.away}</small></div>
+  <div class="grid g2"><div class="match-hero post-match"><div class="match-league">APITO FINAL</div><div class="score" style="text-align:center">${m.homeGoals} : ${m.awayGoals}</div><h2 style="text-align:center;margin:0">${result}</h2><div class="match-status">Nota do ${escapeHtml(p.name)}: <b class="${rating>=7.5?'green':rating>=6?'gold':'red'}">${rating}</b></div><button class="btn primary" onclick="closeMatchV6()">Voltar para partidas</button></div>
+  <div class="card"><div class="eyebrow">Seu jogo</div><div class="statline"><span>Nota</span><b>${rating}</b></div><div class="statline"><span>Gols</span><b>${m.stats.goals}</b></div><div class="statline"><span>Assistências</span><b>${m.stats.assists}</b></div><div class="statline"><span>Finalizações</span><b>${m.stats.shots}</b></div><div class="statline"><span>Dribles</span><b>${m.stats.dribbles}</b></div><div class="statline"><span>Passes certos</span><b>${m.stats.passes}</b></div><div class="statline"><span>Minutos</span><b>${m.minute}</b></div><p class="muted">A atuação foi registrada no histórico da carreira, nas estatísticas e nas notícias.</p></div></div>`;
+}
+function startMatchV6(){
+  if(S.match?.status==='live'){nav('matches');return}
+  const p=S.player;
+  if(p.injury){note('Você está lesionado e não pode jogar.');return}
+  const energy=Math.max(15,Number(p.energy??82));
+  S.match={status:'live',minute:0,home:p.club||'Seu clube',away:'Flamengo',homeGoals:0,awayGoals:0,stadium:'São Januário',round:(S.season.apps||0)+1,tactic:'balanced',rating:6.0,energy,playerActions:0,pendingChoice:null,events:[],stats:{shots:0,dribbles:0,passes:0,assists:0,goals:0},yellow:false,red:false};
+  matchAddEvent(0,'🟢','Bola rolando.',`${p.name} começa a partida ${p.ovr>=72?'como titular':'no banco'}.`);
+  save();render();note('⚽ Partida iniciada!');
+}
+function matchAddEvent(minute,icon,text,detail=''){S.match.events.push({minute,icon,text,detail})}
+function matchTactic(t){if(!S.match||S.match.status!=='live')return;S.match.tactic=t;S.match.rating=Math.max(4,Math.min(10,S.match.rating+(t==='attack'?.05:t==='safe'?.03:t==='risk'?-.02:.02)));save();render();note('Tática alterada.')}
+function matchChoice(i){
+  const m=S.match;if(!m?.pendingChoice)return;
+  const effects=m.pendingChoice.effects[i];m.pendingChoice=null;m.playerActions++;
+  m.rating=Math.max(4,Math.min(10,m.rating+effects.rating));m.energy=Math.max(0,m.energy+effects.energy);
+  if(effects.shot){m.stats.shots++;if(Math.random()<effects.goalChance){m.stats.goals++;m.homeGoals++;m.rating=Math.min(10,m.rating+.8);matchAddEvent(m.minute,'⚽',`${S.player.name} MARCA!`,effects.text);}}
+  if(effects.dribble)m.stats.dribbles++;
+  if(effects.pass)m.stats.passes++;
+  if(effects.assist){m.stats.assists++;m.rating=Math.min(10,m.rating+.7);matchAddEvent(m.minute,'🅰️',`${S.player.name} deu a assistência!`,effects.text);}
+  matchAddEvent(m.minute,'🎮',effects.label,effects.text);
+  save();render();
+}
+function matchGenerateChoice(){
+  const p=S.player,m=S.match;if(m.pendingChoice||Math.random()>.13)return;
+  const chance=Math.random();
+  if(chance<.34)m.pendingChoice={title:`${m.minute}' — Você recebe entre as linhas`,text:'Há espaço para decidir a próxima ação.',options:['Arriscar o passe vertical','Partir para o drible','Manter a posse'],effects:[{label:'Passe vertical tentado',rating:.35,energy:-2,pass:true,assist:Math.random()<.18,text:'A bola encontrou o atacante em boa condição.'},{label:'Drible ofensivo',rating:.25,energy:-4,dribble:true,shot:Math.random()<.25,goalChance:.14,text:'Você ganhou terreno e criou perigo.'},{label:'Posse segura',rating:.12,energy:-1,pass:true,text:'Você controlou o ritmo e manteve a equipe organizada.'}]};
+  else if(chance<.67)m.pendingChoice={title:`${m.minute}' — O gol está no radar`,text:'Você recebeu a bola próximo da área.',options:['Finalizar de primeira','Cortar para dentro','Recuar e construir'],effects:[{label:'Finalização de primeira',rating:.2,energy:-5,shot:true,goalChance:Math.min(.48,(p.finish||70)/170),text:'Chute perigoso! O goleiro precisou trabalhar.'},{label:'Cortar para dentro',rating:.28,energy:-4,dribble:true,shot:true,goalChance:Math.min(.36,(p.finish||70)/210),text:'Você passou pelo marcador e bateu para o gol.'},{label:'Construir a jogada',rating:.18,energy:-1,pass:true,assist:Math.random()<.12,text:'Você escolheu a decisão mais segura.'}]};
+  else m.pendingChoice={title:`${m.minute}' — Pressão sem a bola`,text:'O adversário iniciou um contra-ataque pelo seu setor.',options:['Pressionar imediatamente','Fechar a linha de passe','Recompor sem se expor'],effects:[{label:'Pressão intensa',rating:.3,energy:-6,dribble:false,text:'Você pressionou e recuperou terreno.'},{label:'Fechar passe',rating:.2,energy:-3,text:'Você cortou uma opção importante.'},{label:'Recomposição',rating:.12,energy:-1,text:'A equipe se reorganizou defensivamente.'}]};
+}
+function matchMinute(){
+  const m=S.match,p=S.player;
+  if(m.minute>=90)return;
+  m.minute++;
+  const tempo=m.minute;
+  // desgaste realista
+  const tacticCost={attack:1.15,balanced:0.85,safe:0.65,risk:1.35}[m.tactic]||.85;
+  m.energy=Math.max(0,m.energy-(0.42+tacticCost*.18));
+  // evento geral a cada minuto com probabilidades baixas, aumentando com o tempo
+  const intensity=(Number(p.ovr)||67)/100;
+  const roll=Math.random();
+  if(roll<0.018){m.awayGoals++;matchAddEvent(tempo,'⚽',`Flamengo marca.`,`Contra-ataque rápido e finalização no canto.`);m.rating=Math.max(4,m.rating-.18)}
+  else if(roll<0.033){m.homeGoals++;matchAddEvent(tempo,'⚽',`${p.club} marca!`,`A equipe aproveitou uma boa sequência ofensiva.`);m.rating=Math.min(10,m.rating+.15)}
+  else if(roll<0.055){matchAddEvent(tempo,'🥅','Grande defesa do goleiro.','A partida continua sem alteração no placar.')}
+  else if(roll<0.075){matchAddEvent(tempo,'💥','Finalização perigosa.','A bola passou muito perto da trave.');}
+  else if(roll<0.09){matchAddEvent(tempo,'🚩','Escanteio.','A defesa afastou o cruzamento.')}
+  else if(roll<0.102){matchAddEvent(tempo,'🟨','Cartão amarelo.','O árbitro advertiu um jogador após uma entrada forte.');if(Math.random()<.22){m.yellow=true;S.stats.yellow++;}}
+  else if(roll<0.108){matchAddEvent(tempo,'🔄','Substituição.','O treinador mexe no time para mudar o ritmo.');m.energy=Math.min(100,m.energy+2)}
+  else if(roll<0.114){matchAddEvent(tempo,'🩹','Atendimento médico.','Um jogador sentiu desconforto e recebeu atendimento.');}
+  else if(roll<0.16){matchAddEvent(tempo,'⚡','Transição rápida.','As duas equipes aceleram a partida.');}
+  // contribuição silenciosa do jogador
+  if(Math.random() < (.10+intensity*.06))m.stats.passes++;
+  if(Math.random() < ((p.dribble||70)/100)*.045)m.stats.dribbles++;
+  if(Math.random() < ((p.finish||70)/100)*.025)m.stats.shots++;
+  // escolhas durante o jogo
+  matchGenerateChoice();
+  if(m.energy<12 && Math.random()<.18){matchAddEvent(tempo,'😮‍💨',`${p.name} sente o desgaste.`,`A intensidade caiu; pense em controlar o ritmo.`);m.rating=Math.max(4,m.rating-.12)}
+  if(m.minute===45){matchAddEvent(45,'⏸️','Intervalo.','O treinador passa instruções para o segundo tempo.');}
+  if(m.minute===90){finishMatchV6();return;}
+}
+function matchNext(mins){
+  const m=S.match;if(!m||m.status!=='live')return;
+  if(m.pendingChoice){note('Tome a decisão antes de avançar.');return}
+  mins=Math.max(1,Math.min(10,Number(mins)||1));
+  for(let i=0;i<mins&&m.status==='live';i++)matchMinute();
+  if(m.status==='live'){save();render();}
+}
+function finishMatchV6(){
+  const m=S.match,p=S.player;
+  m.status='finished';m.pendingChoice=null;
+  // pequeno ajuste de nota pelo resultado e energia
+  if(m.homeGoals>m.awayGoals)m.rating+=.25;else if(m.homeGoals<m.awayGoals)m.rating-=.18;
+  m.rating=Math.max(4,Math.min(10,m.rating));
+  S.stats.apps++;S.season.apps++;S.stats.minutes+=m.minute;
+  S.stats.goals+=m.stats.goals;S.season.goals+=m.stats.goals;S.stats.assists+=m.stats.assists;S.season.assists+=m.stats.assists;
+  p.energy=Math.max(0,Math.min(100,m.energy));p.fatigue=Math.min(100,(p.fatigue??18)+Math.round((82-m.energy)*.25));
+  p.morale=Math.max(0,Math.min(100,(p.morale??78)+(m.homeGoals>m.awayGoals?5:m.homeGoals===m.awayGoals?1:-3)));
+  p.popularity=Math.max(0,Math.min(100,p.popularity+(m.stats.goals?4:m.rating>=7.5?2:0)));
+  p.followers+=m.stats.goals?Math.floor(400+Math.random()*700):Math.floor(50+Math.random()*180);
+  if(m.stats.goals && p.ovr<p.potential && m.rating>=7.5)p.ovr++;
+  S.finance.push({date:dateStr(),type:'Bônus de partida',v:m.stats.goals?900:350});
+  const res=m.homeGoals>m.awayGoals?'venceu':m.homeGoals<m.awayGoals?'perdeu':'empatou';
+  S.news.unshift(`${p.name} ${res} com ${p.club} por ${m.homeGoals} a ${m.awayGoals}. Nota ${m.rating.toFixed(1)}.`);
+  matchAddEvent(m.minute,'🏁','Fim de jogo.',`${p.name} terminou com nota ${m.rating.toFixed(1)}.`);
+  save();render();note('🏁 Apito final! Desempenho registrado.');
+}
+function closeMatchV6(){S.match=null;save();render();note('Próxima partida disponível.')}
+function choices(){
+  const p=S.player;
+  const scenarios=[
+    {id:'contract',icon:'💰',title:'Uma proposta inesperada',text:`${p.name} recebeu uma proposta de um clube maior, mas o contrato atual ainda está vigente.`,opts:[
+      ['Aceitar a negociação','ambition',4,'popularidade',3,'Você mostrou ambição e abriu portas para um salto na carreira.'],
+      ['Ficar e cumprir o contrato','loyalty',4,'morale',5,'Você escolheu honrar o projeto atual e ganhou respeito no vestiário.'],
+      ['Pedir mais tempo','professionalism',3,'morale',2,'Você decidiu analisar tudo com calma antes de escolher.']]},
+    {id:'coach',icon:'🗣️',title:'Conversa com o treinador',text:'O treinador chamou o jogador para conversar sobre sua postura nos treinos.',opts:[
+      ['Ouvir e trabalhar mais','professionalism',5,'ovr',1,'Sua postura profissional chamou atenção.'],
+      ['Defender seu ponto de vista','leadership',4,'morale',2,'Você mostrou personalidade e aprendeu a defender suas ideias.'],
+      ['Evitar a discussão','temperament',3,'morale',1,'Você preferiu manter a calma e seguir trabalhando.']]},
+    {id:'social',icon:'📱',title:'Polêmica nas redes',text:'Uma publicação sua viralizou e gerou comentários de torcedores.',opts:[
+      ['Apagar e pedir desculpas','professionalism',4,'popularity',2,'Você controlou a situação com maturidade.'],
+      ['Responder com respeito','leadership',3,'popularity',4,'Sua resposta firme e respeitosa repercutiu bem.'],
+      ['Ignorar tudo','temperament',4,'morale',-1,'Você preferiu não alimentar a polêmica.']]},
+    {id:'teammate',icon:'🤝',title:'Ajude um companheiro',text:'Um jogador jovem está com dificuldades e pediu sua ajuda.',opts:[
+      ['Ajudar depois do treino','leadership',5,'morale',4,'Você fortaleceu a união do elenco.'],
+      ['Convidar para treinar junto','leadership',3,'ovr',1,'Os dois evoluíram juntos.'],
+      ['Focar apenas no seu treino','ambition',2,'morale',-1,'Você priorizou sua evolução individual.']]}
+  ];
+  const used=new Set(S.choices.map(x=>x.id));
+  const available=scenarios.filter(x=>!used.has(x.id));
+  return `<div class="content-title"><h2>Escolhas da carreira</h2><small>Suas decisões mudam personalidade, moral, popularidade e desenvolvimento.</small></div>
+  <div class="grid g2">
+  ${available.length?available.map(s=>`<div class="card feature"><div class="feature-art">${s.icon}</div><h3>${s.title}</h3><p>${s.text}</p>
+    <div class="choice-options">${s.opts.map((o,i)=>`<button class="btn ${i===0?'primary':''}" onclick="makeChoice('${s.id}',${i})">${o[0]}</button>`).join('')}</div>
+  </div>`).join(''):`<div class="card"><h3>✅ Tudo resolvido por enquanto</h3><p class="muted">Novos acontecimentos aparecerão conforme você avança a carreira.</p><button class="btn primary" onclick="advanceDay(7)">Avançar 7 dias</button></div>`}
+  </div>
+  <div class="content-title"><h2>Perfil de personalidade</h2><small>As escolhas constroem a reputação do seu jogador.</small></div>
+  <div class="grid g2">
+    ${choiceStat('Profissionalismo',p.professionalism)}
+    ${choiceStat('Ambição',p.ambition)}
+    ${choiceStat('Liderança',p.leadership)}
+    ${choiceStat('Lealdade',p.loyalty)}
+  </div>
+  <div class="content-title"><h2>Histórico de decisões</h2></div>
+  <div class="card">${S.choices.length?S.choices.slice().reverse().map(c=>`<div class="list-row"><b>${c.title}</b><span class="muted">${c.result}</span></div>`).join(''):'<p class="muted">Nenhuma decisão tomada ainda.</p>'}</div>`;
+}
+function choiceStat(name,val){
+  return `<div class="card"><div class="stat"><small>${name.toUpperCase()}</small><b>${val}/100</b></div><div class="bar"><i style="width:${val}%"></i></div></div>`;
+}
+function makeChoice(id,index){
+  const scenarios=[
+    {id:'contract',title:'Uma proposta inesperada',opts:[
+      ['Aceitar a negociação','ambition',4,'popularity',3,'Você mostrou ambição e abriu portas para um salto na carreira.'],
+      ['Ficar e cumprir o contrato','loyalty',4,'morale',5,'Você escolheu honrar o projeto atual e ganhou respeito no vestiário.'],
+      ['Pedir mais tempo','professionalism',3,'morale',2,'Você decidiu analisar tudo com calma antes de escolher.']]},
+    {id:'coach',title:'Conversa com o treinador',opts:[
+      ['Ouvir e trabalhar mais','professionalism',5,'ovr',1,'Sua postura profissional chamou atenção.'],
+      ['Defender seu ponto de vista','leadership',4,'morale',2,'Você mostrou personalidade e aprendeu a defender suas ideias.'],
+      ['Evitar a discussão','temperament',3,'morale',1,'Você preferiu manter a calma e seguir trabalhando.']]},
+    {id:'social',title:'Polêmica nas redes',opts:[
+      ['Apagar e pedir desculpas','professionalism',4,'popularity',2,'Você controlou a situação com maturidade.'],
+      ['Responder com respeito','leadership',3,'popularity',4,'Sua resposta firme e respeitosa repercutiu bem.'],
+      ['Ignorar tudo','temperament',4,'morale',-1,'Você preferiu não alimentar a polêmica.']]},
+    {id:'teammate',title:'Ajude um companheiro',opts:[
+      ['Ajudar depois do treino','leadership',5,'morale',4,'Você fortaleceu a união do elenco.'],
+      ['Convidar para treinar junto','leadership',3,'ovr',1,'Os dois evoluíram juntos.'],
+      ['Focar apenas no seu treino','ambition',2,'morale',-1,'Você priorizou sua evolução individual.']]}
+  ];
+  const s=scenarios.find(x=>x.id===id); if(!s)return;
+  if(S.choices.some(x=>x.id===id)){note('Essa escolha já foi feita.');return}
+  const o=s.opts[index], p=S.player;
+  const attr=o[1], amount=o[2], second=o[3], secondAmt=o[4];
+  if(attr==='ovr')p.ovr=Math.min(p.potential,p.ovr+amount);
+  else if(attr in p)p[attr]=Math.max(0,Math.min(100,(Number(p[attr])||0)+amount));
+  if(second==='ovr')p.ovr=Math.min(p.potential,p.ovr+secondAmt);
+  else if(second in p)p[second]=Math.max(0,Math.min(100,(Number(p[second])||0)+secondAmt));
+  S.choices.push({id,title:s.title,result:o[5],date:dateStr()});
+  S.news.unshift(`🧠 Escolha: ${o[0]}. ${o[5]}`);
+  save();render();note('🧠 Decisão registrada na sua carreira!');
+}
+function training(){
+  const p=S.player;
+  const energy=Math.max(0,Math.min(100,Number(p.energy??82)));
+  const fatigue=Math.max(0,Math.min(100,Number(p.fatigue??18)));
+  const morale=Math.max(0,Math.min(100,Number(p.morale??78)));
+  const plans=[
+    ['⚡','Velocidade','pace','Explosão, aceleração e arrancada.','+1–3','alto'],
+    ['🎯','Finalização','finish','Chutes, posicionamento e decisão na área.','+1–3','alto'],
+    ['🪄','Drible','dribble','Condução, 1x1 e controle de bola.','+1–3','médio'],
+    ['🎩','Passe','pass','Visão, passe curto e criação.','+1–3','médio'],
+    ['💪','Físico','strength','Força, resistência e disputa.','+1–2','alto'],
+    ['🧠','Visão de jogo','vision','Leitura, tomada de decisão e criatividade.','+1–3','médio']
+  ];
+  return `<div class="content-title"><h2>Centro de Treinamento</h2><small>Prepare ${p.name} para a próxima partida.</small></div>
+  <div class="card training-status">
+    <div class="player-card">
+      <div class="avatar">${p.shirt}</div>
+      <div style="flex:1"><div class="eyebrow">${p.club} · ${p.position}</div><h3>${p.name}</h3>
+      <span class="muted">OVR ${p.ovr} · Potencial ${p.potential}</span></div>
+      <div class="pill">⚡ Energia ${energy}%</div>
+    </div>
+    <div class="stats">
+      ${statBox('ENERGIA',energy,energy)}
+      ${statBox('FADIGA',fatigue,fatigue)}
+      ${statBox('MORAL',morale,morale)}
+      ${statBox('FORMA',Math.max(0,100-fatigue),Math.max(0,100-fatigue))}
+    </div>
+  </div>
+  <div class="content-title"><h2>Treinos individuais</h2><small>Escolha uma sessão. O resultado é imediato e salvo automaticamente.</small></div>
+  <div class="grid g3">${plans.map(x=>`<div class="card feature">
+    <div class="feature-art">${x[0]}</div><h3>${x[1]}</h3><p>${x[3]}</p>
+    <div class="stats"><div class="stat"><small>EVOLUÇÃO</small><b>${x[4]}</b></div><div class="stat"><small>CARGA</small><b>${x[5]}</b></div></div>
+    <button class="btn primary" ${energy<10?'disabled':''} onclick="train('${x[2]}','${x[1]}')">Treinar →</button>
+  </div>`).join('')}</div>
+  <div class="grid g2" style="margin-top:13px">
+    <div class="card"><h3>📅 Rotina</h3><p class="muted">Treinos consecutivos aumentam a evolução, mas também acumulam fadiga.</p>
+      <div class="actions"><button class="btn" onclick="restDay()">😴 Recuperar</button><button class="btn" onclick="advanceDay()">Avançar dia</button></div>
+    </div>
+    <div class="card"><h3>🏆 Treino completo</h3><p class="muted">Faça uma sessão equilibrada para melhorar várias áreas.</p>
+      <button class="btn primary" ${energy<20?'disabled':''} onclick="fullTraining()">🔥 Sessão completa</button>
+    </div>
+  </div>`;
+}
+function ranking(){return `<div class="card"><div class="eyebrow">Comunidade</div><h1 style="margin:5px 0">Ranking de jogadores</h1><p class="muted">Uma amostra da classificação. O ranking global poderá ser conectado a contas online em uma próxima versão.</p>${rankingRows()}</div>`}
+function news(){return `<div class="list">${S.news.map((n,i)=>`<div class="card news-item"><div class="news-thumb">${['⚽','🔥','🌎','📣','💰'][i%5]}</div><div class="news-copy"><b>${n}</b><small>GAERT NEWS · ${dateStr()}</small></div><span class="pill">Futebol</span></div>`).join('')}</div>`}
+function instagram(){let p=S.player,user=(p.nickname||p.name).toLowerCase().replace(/[^a-z0-9]/g,'');return `<div class="grid g2"><div class="card"><div class="player-card"><div class="avatar">${p.shirt}</div><div><h2 style="margin:0">@${user}</h2><span class="muted">${p.followers.toLocaleString('pt-BR')} seguidores</span><p>⚽ ${p.position} · ${p.club}<br>Vivendo o sonho, um dia de cada vez.</p></div></div><button class="btn primary" onclick="newPost()">＋ Nova publicação</button></div><div class="card">${statBox('POPULARIDADE',p.popularity,p.popularity)}<div class="row"><span>Patrocínios</span><b>0</b></div><div class="row"><span>Publicações</span><b>${S.posts.length}</b></div></div></div><div style="max-width:720px;margin:13px auto;display:grid;gap:10px">${S.posts.map(x=>`<div class="card"><div class="player-card"><div class="mini rank-avatar">${p.shirt}</div><div><b>${p.name}</b><small class="muted"> · ${x.date}</small></div></div><p style="font-size:15px">${escapeHtml(x.text)}</p><div class="muted">♡ ${x.likes} · 💬 ${x.comments}</div></div>`).join('')}</div>`}
+function finance(){let total=S.finance.reduce((a,b)=>a+b.v,0);return `<div class="grid g3">${statBox('SALDO REGISTRADO',fmt(total),null)}${statBox('SALÁRIO MENSAL',fmt(S.player.salary),null)}${statBox('VALOR DE MERCADO',fmt(S.player.value),null)}</div><div class="card" style="margin-top:13px"><h2>Extrato</h2><table><thead><tr><th>Data</th><th>Tipo</th><th>Valor</th></tr></thead><tbody>${S.finance.slice().reverse().map(f=>`<tr><td>${f.date}</td><td>${f.type}</td><td class="${f.v>=0?'green':'red'}">${fmt(f.v)}</td></tr>`).join('')||'<tr><td colspan="3" class="muted">Nenhum movimento ainda.</td></tr>'}</tbody></table></div>`}
+function trophies(){return `<div class="card"><div class="eyebrow">Hall da fama</div><h1 style="margin:5px 0">Títulos e prêmios</h1>${S.trophies.length?S.trophies.map(t=>`<div class="row"><span>🏆 ${t}</span><b class="gold">CONQUISTADO</b></div>`).join(''):`<div class="empty">Nenhum título ainda.<br><br>Sua história começa agora.</div>`}</div>`}
+function national(){return `<div class="grid g2"><div class="card"><div class="eyebrow">Seleção Brasileira</div><h1 style="margin:5px 0">🇧🇷 Brasil</h1><div class="row"><span>Status</span><b>${S.national.called?'Convocado':'Fora da convocação'}</b></div><div class="row"><span>Jogos</span><b>${S.national.apps}</b></div><div class="row"><span>Gols</span><b>${S.national.goals}</b></div><button class="btn primary" onclick="nationalEvent()">Simular ciclo</button></div><div class="card"><h2>Competições</h2><div class="row"><span>Eliminatórias</span><span class="pill">Disponível</span></div><div class="row"><span>Copa América</span><span class="pill">Disponível</span></div><div class="row"><span>Copa do Mundo</span><span class="pill">Objetivo</span></div></div></div>`}
+function settings(){return `<div class="card"><div class="eyebrow">Personalização</div><h1 style="margin:5px 0">Configurações</h1><div class="row"><span>Nome da plataforma</span><b>GAERT MODO CARREIRAS</b></div><div class="row"><span>Save local</span><b class="green">Ativo</b></div><div class="row"><span>Versão</span><b>6.0 · Match Engine</b></div><p class="muted">Nesta primeira versão, as carreiras ficam salvas no navegador. Login, contas online e sincronização entre aparelhos podem ser adicionados depois com um backend.</p><button class="btn" onclick="newCareer()">Começar outra carreira</button></div>`}
+function render(){let views={home,create:createPage,careers,matches,training,choices,ranking,news,instagram,finance,trophies,national,settings};document.getElementById('app').innerHTML=views[page]();document.title=`${titles[page]} — GAERT MODO CARREIRAS`;document.querySelectorAll('[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page));if(page==='create')bindForm()}
+function bindForm(){let f=document.getElementById('characterForm');if(!f)return;f.onsubmit=e=>{e.preventDefault();let fd=new FormData(f),p=S.player;for(let [k,v] of fd){if(['shirt','age','height','weight','pro','amb','lead','hum','temp','loyal'].includes(k))p[k]=Number(v);else p[k]=v}S.news.unshift(`${p.name} iniciou uma nova etapa no ${p.club}.`);save();note('Personagem salvo! Sua carreira começou.');nav('home')}}
+function openModal(html){document.getElementById('modalbox').innerHTML=html;document.getElementById('modal').classList.add('open')}function closeModal(){document.getElementById('modal').classList.remove('open')}document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeModal()}
+function newPost(){openModal(`<div class="modal-head"><h2>Nova publicação</h2><button class="close" onclick="closeModal()">✕</button></div><form class="form" id="postForm"><div class="field"><label>Texto</label><textarea name="text" required placeholder="O que está acontecendo na sua carreira?"></textarea></div><div class="actions"><button type="button" class="btn" onclick="closeModal()">Cancelar</button><button class="btn primary">Publicar</button></div></form>`);document.getElementById('postForm').onsubmit=e=>{e.preventDefault();let t=new FormData(e.target).get('text'),l=Math.floor(40+S.player.followers*.04+Math.random()*400);S.posts.unshift({text:t,likes:l,comments:Math.floor(l*.04),date:dateStr()});S.player.followers+=Math.floor(l*.08);S.player.popularity=Math.min(100,S.player.popularity+2);S.news.unshift(`${S.player.name} movimenta as redes sociais com uma nova publicação.`);save();closeModal();render();note('Publicado no Instagram!')}}
+function train(stat,label){
+  const p=S.player;
+  p.energy=Math.max(0,Number(p.energy??82));
+  p.fatigue=Math.max(0,Number(p.fatigue??18));
+  p.morale=Math.max(0,Number(p.morale??78));
+  if(p.injury){note('Você está lesionado.');return}
+  if(p.energy<10){note('Energia insuficiente. Descanse.');return}
+  const gain=1+Math.floor(Math.random()*3);
+  p[stat]=Math.min(99,(Number(p[stat])||60)+gain);
+  if(p.ovr<p.potential && Math.random()<.65)p.ovr=Math.min(p.potential,p.ovr+1);
+  p.energy=Math.max(0,p.energy-(stat==='strength'?18:14));
+  p.fatigue=Math.min(100,p.fatigue+(stat==='strength'?16:12));
+  p.morale=Math.min(100,p.morale+2);
+  S.news.unshift(`${p.name} treinou ${label.toLowerCase()} e evoluiu ${gain} ponto(s).`);
+  S.finance.push({date:dateStr(),type:`Treino — ${label}`,v:0});
+  save();render();note(`🏋️ ${label}: +${gain} atributo`);
+}
+function fullTraining(){
+  const p=S.player;
+  if(p.injury){note('Você está lesionado.');return}
+  if((p.energy??82)<20){note('Energia insuficiente.');return}
+  ['pace','dribble','pass','finish','vision'].forEach(k=>{p[k]=Math.min(99,(Number(p[k])||60)+(Math.random()<.55?1:0))});
+  if(p.ovr<p.potential)p.ovr++;
+  p.energy=Math.max(0,(p.energy??82)-20);
+  p.fatigue=Math.min(100,(p.fatigue??18)+20);
+  p.morale=Math.min(100,(p.morale??78)+4);
+  S.news.unshift(`${p.name} concluiu uma sessão completa no centro de treinamento.`);
+  save();render();note('🔥 Treino completo concluído!');
+}
+function restDay(){
+  const p=S.player;
+  p.energy=Math.min(100,(p.energy??82)+28);
+  p.fatigue=Math.max(0,(p.fatigue??18)-25);
+  p.morale=Math.min(100,(p.morale??78)+3);
+  if(p.injury && Math.random()<.35)p.injury=null;
+  advanceDay();
+  note('😴 Recuperação concluída.');
+}
+function play(sim){
+  if(window.__matchBusy)return;
+  window.__matchBusy=true;
+  try{
+    if(S.player.injury){note('Você está lesionado.');return}
+    let p=S.player, rating=p.ovr/10+(Math.random()*3-1);
+    let g=Math.random()<(Number(p.finish||70)/100*.35);
+    let a=Math.random()<(Number(p.pass||70)/100*.25);
+    S.stats.apps++; S.season.apps++; S.stats.minutes+=Math.floor(35+Math.random()*60);
+    if(g){S.stats.goals++;S.season.goals++}
+    if(a){S.stats.assists++;S.season.assists++}
+    if(Math.random()<.06)S.stats.yellow++;
+    if(Math.random()<.008)S.stats.red++;
+    if(Math.random()<.018)p.injury='lesão muscular — 14 dias';
+    if(rating>8&&p.ovr<p.potential)p.ovr++;
+    p.popularity=Math.min(100,p.popularity+(g?4:1));
+    p.followers+=g?Math.floor(350+Math.random()*800):Math.floor(40+Math.random()*180);
+    S.finance.push({date:dateStr(),type:'Bônus de partida',v:g?650:250});
+    S.news.unshift(g?`${p.name} marca em Vasco x Flamengo e vira destaque.`:`${p.name} participa da partida e segue em evolução.`);
+    save();render();note(g?'⚽ GOL! Partida concluída!':'Partida concluída!');
+  }finally{setTimeout(()=>window.__matchBusy=false,500)}
+}
+function advanceDay(days=1){
+  days=Math.max(1,Math.min(30,Number(days)||1));
+  for(let i=0;i<days;i++){
+    S.date.d++;
+    if(S.date.d>30){
+      S.date.d=1;S.date.m++;
+      if(S.date.m>12){
+        S.date.m=1;S.date.y++;S.player.age++;
+        S.history.push({year:S.date.y,age:S.player.age,club:S.player.club,apps:S.season.apps,goals:S.season.goals,assists:S.season.assists,ovr:S.player.ovr});
+        S.season={apps:0,goals:0,assists:0};
+        if(S.player.age>=30&&S.player.ovr>55)S.player.ovr--;
+        if(S.player.age>=38&&S.player.ovr>45)S.player.ovr-=2;
+        S.news.unshift(`Nova temporada: ${S.date.y}. ${S.player.name} agora tem ${S.player.age} anos.`);
+      }
+    }
+    if(S.player.injury&&Math.random()<.12)S.player.injury=null;
+    if(Math.random()<.08&&S.player.ovr<S.player.potential)S.player.ovr++;
+    S.finance.push({date:dateStr(),type:'Salário diário',v:Math.round(S.player.salary/30)});
+  }
+  save();render();note(days===1?'Dia avançado':`${days} dias avançados`);
+}
+function nationalEvent(){let p=S.player;if(p.ovr>=76||Math.random()<.25){S.national.called=true;S.national.apps++;if(Math.random()<.2)S.national.goals++;S.news.unshift(`${p.name} foi convocado para a Seleção Brasileira.`);p.popularity=Math.min(100,p.popularity+6);p.followers+=700}else S.news.unshift(`${p.name} ainda não aparece na lista da Seleção.`);save();render();note(S.national.called?'🇧🇷 Convocado!':'Ainda não convocado')}
+function newCareer(){if(confirm('Começar uma nova carreira? O jogador atual será substituído neste dispositivo.')){S=clone(base);S.id=Date.now();save();nav('create');note('Nova carreira pronta!')}}
+function exportSave(){let b=new Blob([JSON.stringify(S,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='gaert-modo-carreiras-save.json';a.click();URL.revokeObjectURL(a.href)}
+document.getElementById('newCareerBtn').onclick=newCareer;document.getElementById('exportBtn').onclick=exportSave;document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();document.getElementById('importFile').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{S=JSON.parse(r.result);save();nav('home');note('Save importado!')}catch{alert('Save inválido')}};r.readAsText(f)};
+document.getElementById('search').onkeydown=e=>{if(e.key==='Enter'){let q=e.target.value.trim();if(q){S.news.unshift(`Busca realizada por “${q}”.`);save();note('Busca simulada no universo GAERT')}}};
+function toggleThemeHint(){note('Interface GAERT já está no tema escuro premium.')}
+function escapeHtml(s){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+nav('home');
+</script>
+
+<script>
+(function(){
+  function tick(){
+    const e=document.getElementById('liveClock');
+    if(e)e.textContent=new Date().toLocaleTimeString('pt-BR',{hour12:false});
+  }
+  tick();setInterval(tick,1000);
+  window.addEventListener('pagehide',()=>{try{save()}catch(e){}});
+  window.addEventListener('beforeunload',()=>{try{save()}catch(e){}});
+})();
+</script>
+</body></html>
